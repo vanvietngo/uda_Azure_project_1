@@ -252,7 +252,7 @@ def logout():
 
     return redirect(url_for('login'))
 
-def _load_cache(cache):
+def _load_cache():
     return None
     if cache.has_state_change:
         session['token_cache'] = cache.serialize()
